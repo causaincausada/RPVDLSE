@@ -14,6 +14,7 @@ MINSIZE_WINDOW_X = 1050
 MINSIZE_WINDOW_Y = 750
 
 
+
 class Gui(ThemedTk):
     def __init__(self):
         super().__init__()
@@ -81,3 +82,4 @@ class Gui(ThemedTk):
         if self.messages.ask_confirm_close_main():
             self.app_logic.disconnect_mongodb()
             self.after(10, self.destroy())
+
